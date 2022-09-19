@@ -15775,3 +15775,15 @@ footer .services {
 .servicesBlock .swiper-slide {
   cursor: pointer
 }
+.inputForm {
+  position: relative;
+}
+.inputForm input {
+  width: 100%;
+  padding: 5px;
+}
+.inputForm label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
