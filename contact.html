@@ -28,8 +28,7 @@
     <main class="main-content  ">
   
       <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
-  
-  
+
         <div class="header__container">
           <div class="row justify-between items-center">
   
@@ -41,18 +40,16 @@
                     <img src="img/logo.svg" alt="logo">
                   </a>
                 </div>
-  
               </div>
             </div>
-  
   
             <div class="header-menu js-mobile-menu-toggle ">
               <div class="header-menu__content">
                 <div class="mobile-bg js-mobile-bg"></div>
   
                 <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                  <a href="login.html" class="text-dark-1">Log in</a>
-                  <a href="signup.html" class="text-dark-1 ml-30">Sign Up</a>
+                  <a href="login.html" class="text-dark-1">Войти</a>
+                  <a href="signup.html" class="text-dark-1 ml-30">Регистрация</a>
                 </div>
   
                 <div class="menu js-navList">
@@ -64,8 +61,11 @@
                     </li>
   
                     <li class="menu-item-has-children">
-                      <a data-barba href="services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <a data-barba href="#">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
                       <ul class="subnav">
+                        <li class="menu__backButton js-nav-list-back">
+                          <a href="#"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
+                        </li>
   
                         <li><a href="event-list-1.html">YouTube</a></li>
   
@@ -81,49 +81,15 @@
                     </li>
   
                     <li>
-                      <a data-barba href="contact.html">
-                        Контакты
-                      </a>
+                      <a data-barba href="contact.html">Контакты</a>
                     </li>
                   </ul>
-                </div>
-  
-                <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
-                  <div class="mobile-footer__number">
-                    <div class="text-17 fw-500 text-dark-1">Call us</div>
-                    <div class="text-17 fw-500 text-purple-1">800 388 80 90</div>
-                  </div>
-  
-                  <div class="lh-2 mt-10">
-                    <div>329 Queensberry Street,<br> North Melbourne VIC 3051, Australia.</div>
-                    <div>hi@educrat.com</div>
-                  </div>
-  
-                  <div class="mobile-socials mt-10">
-  
-                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-  
-                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-  
-                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
-                      <i class="fa fa-instagram"></i>
-                    </a>
-  
-                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-  
-                  </div>
                 </div>
               </div>
   
               <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
                 <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
-                  <div class="icon-close text-dark-1 text-16"></div>
+                  <i class="fa-solid fa-xmark text-24"></i>
                 </div>
               </div>
   
@@ -133,7 +99,126 @@
   
             <div class="col-auto">
               <div class="header-right d-flex items-center">
-                
+                <div class="header-right__icons text-white d-flex items-center">
+  
+                  <div class="">
+  
+                    <div class="toggle-element js-search-toggle">
+                      <div class="header-search pt-90 bg-white shadow-4">
+                        <div class="container">
+                          <div class="header-search__field">
+                            <div class="icon icon-search text-dark-1"></div>
+                            <input type="text" class="col-12 text-18 lh-12 text-dark-1 fw-500" placeholder="What do you want to learn?">
+  
+                            <button class="d-flex items-center justify-center size-40 rounded-full bg-purple-3" data-el-toggle=".js-search-toggle">
+                              <img src="img/menus/close.svg" alt="icon">
+                            </button>
+                          </div>
+  
+                          <div class="header-search__content mt-30">
+                            <div class="text-17 text-dark-1 fw-500">Popular Right Now</div>
+  
+                            <div class="d-flex y-gap-5 flex-column mt-20">
+                              <a href="courses-single-1.html" class="text-dark-1">The Ultimate Drawing Course - Beginner to Advanced</a>
+                              <a href="courses-single-2.html" class="text-dark-1">Character Art School: Complete Character Drawing Course</a>
+                              <a href="courses-single-3.html" class="text-dark-1">Complete Blender Creator: Learn 3D Modelling for Beginners</a>
+                              <a href="courses-single-4.html" class="text-dark-1">User Experience Design Essentials - Adobe XD UI UX Design</a>
+                              <a href="courses-single-5.html" class="text-dark-1">Graphic Design Masterclass - Learn GREAT Design</a>
+                              <a href="courses-single-6.html" class="text-dark-1">Adobe Photoshop CC – Essentials Training Course</a>
+                            </div>
+  
+                            <div class="mt-30">
+                              <button class="uppercase underline">PRESS ENTER TO SEE ALL SEARCH RESULTS</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header-search__bg" data-el-toggle=".js-search-toggle"></div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="relative ml-30 xl:ml-20">
+  
+                    <div class="toggle-element js-cart-toggle">
+                      <div class="header-cart bg-white -dark-bg-dark-1 rounded-8">
+                        <div class="px-30 pt-30 pb-10">
+  
+                          <div class="row justify-between x-gap-40 pb-20">
+                            <div class="col">
+                              <div class="row x-gap-10 y-gap-10">
+                                <div class="col-auto">
+                                  <img src="img/menus/cart/1.png" alt="image">
+                                </div>
+  
+                                <div class="col">
+                                  <div class="text-dark-1 lh-15">The Ultimate Drawing Course Beginner to Advanced...</div>
+  
+                                  <div class="d-flex items-center mt-10">
+                                    <div class="lh-12 fw-500 line-through text-light-1 mr-10">$179</div>
+                                    <div class="text-18 lh-12 fw-500 text-dark-1">$79</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-auto">
+                              <button><img src="img/menus/close.svg" alt="icon"></button>
+                            </div>
+                          </div>
+  
+                          <div class="row justify-between x-gap-40 pb-20">
+                            <div class="col">
+                              <div class="row x-gap-10 y-gap-10">
+                                <div class="col-auto">
+                                  <img src="img/menus/cart/2.png" alt="image">
+                                </div>
+  
+                                <div class="col">
+                                  <div class="text-dark-1 lh-15">User Experience Design Essentials - Adobe XD UI UX...</div>
+  
+                                  <div class="d-flex items-center mt-10">
+                                    <div class="lh-12 fw-500 line-through text-light-1 mr-10">$179</div>
+                                    <div class="text-18 lh-12 fw-500 text-dark-1">$79</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-auto">
+                              <button><img src="img/menus/close.svg" alt="icon"></button>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+                        <div class="px-30 pt-20 pb-30 border-top-light">
+                          <div class="d-flex justify-between">
+                            <div class="text-18 lh-12 text-dark-1 fw-500">Total:</div>
+                            <div class="text-18 lh-12 text-dark-1 fw-500">$659</div>
+                          </div>
+  
+                          <div class="row x-gap-20 y-gap-10 pt-30">
+                            <div class="col-sm-6">
+                              <button class="button py-20 -dark-1 text-white -dark-button-white col-12">View Cart</button>
+                            </div>
+                            <div class="col-sm-6">
+                              <button class="button py-20 -purple-1 text-white col-12">Checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="d-none xl:d-block ml-20">
+                    <button class="d-flex text-white items-center" data-el-toggle=".js-mobile-menu-toggle">
+                      <i class="fa-solid fa-bars text-20"></i>
+                    </button>
+                  </div>
+  
+                </div>
   
                 <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
                   <a href="login.html" class="button -underline text-white">Войти</a>
