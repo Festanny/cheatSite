@@ -115,7 +115,7 @@
               </div>
 
               <div class="header-right__buttons md:d-none">
-                <a href="signup.html" class="button -sm -rounded -dark-1 text-white">Регистрация</a>
+                <a href="login.html" class="button -sm -rounded -dark-1 text-white">Вход</a>
               </div>
             </div>
           </div>
@@ -141,30 +141,38 @@
         <div class="form-page__content lg:py-50">
           <div class="container">
             <div class="row justify-center items-center">
-              <div class="col-xl-6 col-lg-8">
+              <div class="col-xl-8 col-lg-9">
                 <div class="px-50 py-50 md:px-25 md:py-25 bg-white shadow-1 rounded-16">
-                  <h3 class="text-30 lh-13">Авторизация</h3>
-                  <p class="mt-10">Нет аккаунта? <a href="signup.html" class="text-purple-1">Зарегистрируйтесь</a></p>
+                  <h3 class="text-30 lh-13">Регистрация</h3>
+                  <p class="mt-10">Уже есть аккаунт? <a href="login.html" class="text-purple-1">Войти</a></p>
 
                   <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
-                    <div class="col-12">
-                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Логин или Email</label>
-                      <input type="text" name="title" placeholder="Логин или Email">
+                    <div class="col-lg-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Email адрес *</label>
+                      <input type="text" name="title" placeholder="Email">
                     </div>
-                    <div class="col-12">
-                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Пароль</label>
-                      <input type="password" name="title" placeholder="Пароль">
+                    <div class="col-lg-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Логин *</label>
+                      <input type="text" name="title" placeholder="Логин">
+                    </div>
+                    <div class="col-lg-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Пароль *</label>
+                      <input type="text" name="title" placeholder="Пароль">
+                    </div>
+                    <div class="col-lg-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Повтор пароля *</label>
+                      <input type="text" name="title" placeholder="Повтор пароля">
                     </div>
                     <div class="col-12">
                       <button type="submit" name="submit" id="submit" class="button -md -green-1 text-dark-1 fw-500 w-1/1">
-                        Войти
+                        Зарегистрироваться
                       </button>
                     </div>
                   </form>
 
-                  <div class="lh-12 text-dark-1 fw-500 text-center mt-20">Или войдите с помощью</div>
+                  <div class="lh-12 text-dark-1 fw-500 text-center mt-20">Или войти с помощью</div>
 
-                  <div class="d-grid pt-20 soc-auth">
+                  <div class="d-grid soc-auth pt-20">
                     <div><button class="button -sm px-24 py-20 -outline-blue-3 text-blue-3 text-14">Facebook</button></div>
                     <div><button class="button -sm px-24 py-20 -outline-red-3 text-red-3 text-14">Google</button></div>
                   </div>

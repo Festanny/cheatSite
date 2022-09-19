@@ -62,7 +62,19 @@ $("body").on('click', '[href*="#"]', function (e) {
 	e.preventDefault();
 });
 
-    
+// Tab-main
+$('.servicesBlock .swiper-slide').click(function () {
+	var id = $(this).attr('data-tab'),
+  content = $('.servicesBlock .block[data-tab="' + id + '"]');
+
+	$('.servicesBlock .swiper-slide.active').removeClass('active');
+	$(this).addClass('active');
+
+	$('.servicesBlock .block.active').removeClass('active');
+	content.addClass('active');
+  console.log(id);
+  console.log(content);
+});
     
     // Reloads all scripts when navigating through pages
     function initComponents() {
@@ -1166,7 +1178,7 @@ $("body").on('click', '[href*="#"]', function (e) {
           centeredSlides: centered,
           parallax: true,
           watchSlidesVisibility: true,
-          loop: loop,
+          // loop: loop,
           loopAdditionalSlides: 1,
           preloadImages: false,
           lazy: true,

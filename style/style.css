@@ -15753,3 +15753,25 @@ footer .services {
 .mt90 {
   margin-top: 90px;
 }
+.soc-auth {
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 20px;
+}
+.soc-auth button {
+  width: 100%;
+}
+.servicesBlock .itemTabServices .block {
+  display: none;
+}
+.servicesBlock .itemTabServices .block.active {
+  display: block;
+}
+.servicesBlock .swiper-slide.active .featureCard__content {
+  background-color: var(--color-dark-1) !important;
+}
+.servicesBlock .swiper-slide.active .featureCard__content .featureCard__title {
+  color: white!important;
+}
+.servicesBlock .swiper-slide {
+  cursor: pointer
+}

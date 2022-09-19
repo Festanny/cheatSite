@@ -48,7 +48,7 @@
                 <div class="mobile-bg js-mobile-bg"></div>
   
                 <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                  <a href="login.html" class="text-dark-1">Войти</a>
+                  <a href="login.html" class="text-dark-1">Вход</a>
                   <a href="signup.html" class="text-dark-1 ml-30">Регистрация</a>
                 </div>
   
@@ -221,7 +221,7 @@
                 </div>
   
                 <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
-                  <a href="login.html" class="button -underline text-white">Войти</a>
+                  <a href="login.html" class="button -underline text-white">Вход</a>
                   <a href="signup.html" class="button -sm -white text-dark-1 ml-30">Регистрация</a>
                 </div>
               </div>
@@ -255,7 +255,7 @@
                       <a data-barba href="#services-main" class="button -md -purple-1 text-white">Быстрый заказ</a>
                     </div>
                     <div class="col-12 col-sm-auto">
-                      <a data-barba href="courses-list-1.html" class="button -md -outline-green-1 text-green-1">Войти</a>
+                      <a data-barba href="login.html" class="button -md -outline-green-1 text-green-1">Войти</a>
                     </div>
                   </div>
                   
@@ -331,7 +331,7 @@
               </div>
             </div>
   
-            <div class="row y-gap-30 justify-between sm:justify-start items-center pt-60 md:pt-50 whyStart">
+            <div class="row y-gap-30 justify-between sm:justify-start pt-60 md:pt-50 whyStart">
   
               <div data-anim-child="slide-up delay-1" class="whyStartBlock">
                 <div class="d-flex justify-center items-center">
@@ -358,13 +358,13 @@
           </div>
         </section>
   
-        <section class="layout-pt-md layout-pb-md" id="services-main">
+        <section class="layout-pt-md layout-pb-md servicesBlock" id="services-main">
           <div data-anim-wrap class="container">
   
             <div class="overflow-hidden js-section-slider" data-gap="30" data-loop data-pagination data-slider-cols="xl-6 lg-4 md-2 sm-2">
               <div class="swiper-wrapper">
   
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-tab="1">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -375,7 +375,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-tab="2">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -386,7 +386,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-tab="3">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -397,7 +397,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-tab="4">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -424,6 +424,18 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
+              </div>
+
+              <div class="itemTabServices">
+                <div class="block" data-tab="1">
+                  <div>
+                    <label for="linkInput">Вставьте ссылку</label>
+                    <input type="text" id="linkInput" placeholder="Вставьте ссылку">
+                  </div>
+                </div>
+                <div class="block" data-tab="2">2</div>
+                <div class="block" data-tab="3">3</div>
+                <div class="block" data-tab="4">4</div>
               </div>
             </div>
           </div>
