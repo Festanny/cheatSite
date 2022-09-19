@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Educrat</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
+</head>
+<body class="preloader-visible" data-barba="wrapper">
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
+    </div>
+    <!-- preloader end -->
+  
+  
+    <main class="main-content  ">
+  
+      <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
+  
+  
+        <div class="header__container">
+          <div class="row justify-between items-center">
+  
+            <div class="col-auto">
+              <div class="header-left">
+  
+                <div class="header__logo ">
+                  <a data-barba href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                  </a>
+                </div>
+  
+              </div>
+            </div>
+  
+  
+            <div class="header-menu js-mobile-menu-toggle ">
+              <div class="header-menu__content">
+                <div class="mobile-bg js-mobile-bg"></div>
+  
+                <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+                  <a href="login.html" class="text-dark-1">Log in</a>
+                  <a href="signup.html" class="text-dark-1 ml-30">Sign Up</a>
+                </div>
+  
+                <div class="menu js-navList">
+                  <ul class="menu__nav text-white -is-active">
+                    <li>
+                      <a data-barba href="index.html">
+                        Главная
+                      </a>
+                    </li>
+  
+                    <li class="menu-item-has-children">
+                      <a data-barba href="services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <ul class="subnav">
+  
+                        <li><a href="event-list-1.html">YouTube</a></li>
+  
+                        <li><a href="event-list-2.html">VK</a></li>
+  
+                        <li><a href="event-single.html">Twitter</a></li>
+  
+                      </ul>
+                    </li>
+  
+                    <li>
+                      <a data-barba href="about.html">О нас</a>
+                    </li>
+  
+                    <li>
+                      <a data-barba href="contact.html">
+                        Контакты
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                  <div class="mobile-footer__number">
+                    <div class="text-17 fw-500 text-dark-1">Call us</div>
+                    <div class="text-17 fw-500 text-purple-1">800 388 80 90</div>
+                  </div>
+  
+                  <div class="lh-2 mt-10">
+                    <div>329 Queensberry Street,<br> North Melbourne VIC 3051, Australia.</div>
+                    <div>hi@educrat.com</div>
+                  </div>
+  
+                  <div class="mobile-socials mt-10">
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+                <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                  <div class="icon-close text-dark-1 text-16"></div>
+                </div>
+              </div>
+  
+              <div class="header-menu-bg"></div>
+            </div>
+  
+  
+            <div class="col-auto">
+              <div class="header-right d-flex items-center">
+                
+  
+                <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
+                  <a href="login.html" class="button -underline text-white">Войти</a>
+                  <a href="signup.html" class="button -sm -white text-dark-1 ml-30">Регистрация</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </header>
+  
+  
+      <div class="content-wrapper js-content-wrapper mt90">
+
+          <section class="layout-pt-md layout-pb-lg">
+            <div data-anim-wrap class="container">
+              <div class="row y-gap-50 justify-between">
+    
+                <div class="col-lg-12">
+                  <h3 class="text-24 fw-500">Напишите нам</h3>
+                  <p class="mt-25">Заполните форму, и мы свяжемся с вами в ближайшее время
+                  </p>
+    
+                  <form class="contact-form row y-gap-30 pt-60 lg:pt-40" action="#" method="POST">
+                    <div class="col-md-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Ваше имя</label>
+                      <input type="text" name="title" placeholder="Имя">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Email адрес</label>
+                      <input type="text" name="title" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Ваше сообщение</label>
+                      <textarea name="comment" placeholder="Сообщение" rows="8"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" name="submit" id="submit" class="button -md -purple-1 text-white">
+                        Отправить сообщение
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <section class="layout-pt-lg layout-pb-lg bg-light-4">
+            <div class="container">
+              <div class="row justify-center text-center">
+                <div class="col-xl-8 col-lg-9 col-md-11">
+    
+                  <div class="sectionTitle ">
+    
+                    <h2 class="sectionTitle__title ">Популярные вопросы</h2>
+    
+                    <!-- <p class="sectionTitle__text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco</p> -->
+    
+                  </div>
+    
+    
+                  <div class="accordion -block text-left pt-60 lg:pt-40 js-accordion">
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Зачем нужно продвижение в социальных сетях?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Продвижение в социальных сетях полезно, как для собственной страницы, так и для бизнеса. Раскрутка используется для повышения личного бренда, это добавляет узнаваемости и повышает доверие.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Использовать SOCSTAR безопасно?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Да, наш сервис гарантирует Вам надежность и безопасность. Ваш аккаунт в социальной сети не получит никаких санкции. Мы используем только качественные и эффективные источники трафика.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Могу ли я сделать заказ без регистрации?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Конечно! В Нашем сервисе доступна услуга «Быстрый заказ». Сразу после оплаты заказа Вы будете автоматически перенаправлены в личный кабинет, он создается на указанный Вами Email при оформлении заказа.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Как отслеживать выполнение заказа?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Отслеживать заказы Вы сможете в удобном личном кабинете. Он создается автоматически после Вашего первого заказа. Логин и пароль отправляются на Ваш Email, указанный при создании первого заказа.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Сколько времени займет выполнение заказа?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Время выполнения заказа зависит от услуги и объема заказа. В среднем заказ выполняется от 5 минут до нескольких часов. Если заказ не будет выполнен в течении 24 часов, оплаченные средства вернутся Вам на баланс в личном кабинете. Причина возврата также будет указана в личном кабинете.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Указали неверную ссылку. Что делать?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Не волнуйтесь, наша система автоматически проверяет все заказы. Если обнаружит, что по ссылке нет вашего аккаунта или поста, заказ отменится, а денежные средства вернутся на баланс Вашего личного кабинета в течение 12 часов. Если ссылка была действительной и заказ был выполнен, то вернуть средства за заказ не представляется возможным.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+        <footer class="footer -type-1 bg-dark-1 -green-links">
+          <div class="container">
+            <div class="footer-header">
+              <div class="row y-gap-20 justify-between items-center">
+                <div class="col-auto">
+                  <div class="footer-header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="footer-header-socials">
+                    <div class="footer-header-socials__title text-white">Подписывайтесь на нас</div>
+                    <div class="footer-header-socials__list">
+                      <a href="#"><i class="fa-brands fa-vk"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="footer-columns">
+              <div class="row y-gap-30">
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">Меню</div>
+                  <div class="d-flex y-gap-10 flex-column">
+                    <a href="about-1.html">Главная</a>
+                    <a href="blog-list-1.html">Каталог услуг</a>
+                    <a href="instructor-become.html">Отзывы</a>
+                    <a href="blog-list-1.html">FAQ</a>
+                    <a href="contact-1.html">Контакты</a>
+                  </div>
+                </div>
+  
+                <div class="col-xl-4 col-lg-8">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">Услуги</div>
+                  <div class="row justify-between y-gap-20">
+                    <div class="col-md-12">
+                      <div class="y-gap-10 flex-column services">
+                        <a href="courses-single-1.html">YouTube</a>
+                        <a href="courses-single-2.html">VK</a>
+                        <a href="courses-single-1.html">YouTube</a>
+                        <a href="courses-single-2.html">VK</a>
+                        <a href="courses-single-1.html">YouTube</a>
+                        <a href="courses-single-2.html">VK</a>
+                        <a href="courses-single-2.html">VK</a>
+                        <a href="courses-single-1.html">YouTube</a>
+                        <a href="courses-single-2.html">VK</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">О сервисе</div>
+                  <div class="d-flex y-gap-10 flex-column">
+                    <a href="terms.html">Политика cookies</a>
+                    <a href="help-center.html">Условия обслуживания</a>
+                    <a href="dashboard.html">Политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="py-30 border-top-light-15">
+              <div class="row justify-between items-center y-gap-20">
+                <div class="col-auto">
+                  <div class="d-flex items-center h-100 text-white">
+                    © 2022 Educrat. All Right Reserved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  
+  
+      </div>
+    </main>
+  
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
