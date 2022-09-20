@@ -1206,11 +1206,7 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
     var swiper = new Swiper(".swiperSliderServices", {
       slidesPerView: 1,
       spaceBetween: 30,
-      slidesPerGroup: 2,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true
-      },
+      slidesPerGroup: 1,
       simulateTouch: false,
       pagination: {
         el: ".swiper-pagination-service",
