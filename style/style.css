@@ -15762,10 +15762,11 @@ footer .services {
   width: 100%;
 }
 .servicesBlock .itemTabServices .block {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 .servicesBlock .itemTabServices .block.active {
-  display: block;
+  height: 100%;
 }
 .servicesBlock .swiper-slide.active .featureCard__content {
   background-color: var(--color-dark-1) !important;
@@ -15823,7 +15824,8 @@ footer .services {
 .swiper-slide.slideService {
   padding: 25px;
   height: auto!important;
-  background: var(--color-light-3)
+  background: var(--color-light-3);
+  margin: 0 10px;
 }
 .swiper-pagination-service .swiper-pagination-bullet:not(:first-of-type) {
   margin-left: 12px;

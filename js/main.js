@@ -1202,27 +1202,39 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
       }
     }
 
-    // slideServicesSwiper
-    var swiper = new Swiper(".swiperSliderServices", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      simulateTouch: false,
-      pagination: {
-        el: ".swiper-pagination-service",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".arrow-right-hover",
-        prevEl: ".arrow-left-hover",
-      },
-      breakpoints: {
-        1199: { slidesPerView: 4 },
-        991: { slidesPerView: 3 },
-        767:  { slidesPerView: 2 },
-        574:  { slidesPerView: 1 },
-      },
+    $(document).ready(function(){
+      $('.sliderCustomizeService').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        draggable: false
+      });
     });
+
+    // // slideServicesSwiper
+    // var swiper = new Swiper(".swiperSliderServices", {
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   slidesPerGroup: 1,
+    //   simulateTouch: false,
+    //   pagination: {
+    //     el: ".swiper-pagination-service",
+    //     clickable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: ".arrow-right-hover",
+    //     prevEl: ".arrow-left-hover",
+    //   },
+    //   breakpoints: {
+    //     1199: { slidesPerView: 4 },
+    //     991: { slidesPerView: 3 },
+    //     767:  { slidesPerView: 2 },
+    //     574:  { slidesPerView: 1 },
+    //   },
+    // });
 
     // slider Review
     var swiper = new Swiper(".js-section-slider2", {
@@ -1245,7 +1257,7 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
     });
 
     // quantity and coast (input)
-    $('.swiperSliderServices .swiper-wrapper .function input').on('input', function(el) {
+    $('.sliderCustomizeService .swiper-slide .function input').on('input', function(el) {
       var elemInput = $(el.target)[0];
       var elemInputQuan = elemInput.value * 1.5;
       var quan = $($(elemInput).prev()[0]).children()[0];
