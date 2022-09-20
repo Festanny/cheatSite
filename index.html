@@ -364,7 +364,7 @@
             <div class="overflow-hidden js-section-slider" data-gap="30" data-loop data-pagination data-slider-cols="xl-6 lg-4 md-2 sm-2">
               <div class="swiper-wrapper">
   
-                <div class="swiper-slide" data-tab="1">
+                <div class="swiper-slide slideBlock" data-tab="1">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -375,7 +375,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide" data-tab="2">
+                <div class="swiper-slide slideBlock" data-tab="2">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -386,7 +386,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide" data-tab="3">
+                <div class="swiper-slide slideBlock" data-tab="3">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -397,7 +397,7 @@
                   </div>
                 </div>
   
-                <div class="swiper-slide" data-tab="4">
+                <div class="swiper-slide slideBlock" data-tab="4">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -428,10 +428,51 @@
 
               <div class="itemTabServices">
                 <div class="block" data-tab="1">
-                  <form action="">
+                  <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
                     <div class="col-12">
                       <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Вставьте ссылку</label>
                       <input type="text" name="title" placeholder="Вставьте ссылку">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
+                      <div class="swiper swiperSliderServices">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Просмотры</label>
+                              <p>Увеличить количество просмотров под видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input id="quantityService" type="range" value="25" max="100" min="0">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">Slide 2</div>
+                          <div class="swiper-slide slideService">Slide 3</div>
+                          <div class="swiper-slide slideService">Slide 4</div>
+                          <div class="swiper-slide slideService">Slide 5</div>
+                          <div class="swiper-slide slideService">Slide 6</div>
+                          <div class="swiper-slide slideService">Slide 7</div>
+                          <div class="swiper-slide slideService">Slide 8</div>
+                          <div class="swiper-slide slideService">Slide 9</div>
+                        </div>
+                        <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-left-hover js-prev swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <div class="swiper-pagination-service"></div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-right-hover js-next swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>

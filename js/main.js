@@ -63,17 +63,15 @@ $("body").on('click', '[href*="#"]', function (e) {
 });
 
 // Tab-main
-$('.servicesBlock .swiper-slide').click(function () {
+$('.servicesBlock .swiper-slide.slideBlock').click(function () {
 	var id = $(this).attr('data-tab'),
   content = $('.servicesBlock .block[data-tab="' + id + '"]');
 
-	$('.servicesBlock .swiper-slide.active').removeClass('active');
+	$('.servicesBlock .swiper-slide.slideBlock.active').removeClass('active');
 	$(this).addClass('active');
 
 	$('.servicesBlock .block.active').removeClass('active');
 	content.addClass('active');
-  console.log(id);
-  console.log(content);
 });
     
     // Reloads all scripts when navigating through pages
@@ -1204,6 +1202,31 @@ $('.servicesBlock .swiper-slide').click(function () {
         });
       }
     }
+
+    // slideServicesSwiper
+    var swiper = new Swiper(".swiperSliderServices", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true
+      },
+      simulateTouch: false,
+      pagination: {
+        el: ".swiper-pagination-service",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".arrow-right-hover",
+        prevEl: ".arrow-left-hover",
+      },
+    });
+
+    // quantity
+    document.getElementById("quantityService").addEventListener("change", function() {
+      console.log(this.value);
+    });
     
     /*--------------------------------------------------
       01. Custom easings

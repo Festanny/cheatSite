@@ -3929,7 +3929,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background: var(--color-light-3);
   border-radius: 8px;
-  padding: 26px 45px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6614,7 +6614,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .pagination.-arrows .pagination__item:last-of-type {
-  display: none;
+  /* display: none; */
 }
 
 .pagination.-arrows .pagination__item.is-active {
@@ -15773,7 +15773,7 @@ footer .services {
   color: white!important;
 }
 .servicesBlock .swiper-slide {
-  cursor: pointer
+  /* cursor: pointer */
 }
 .inputForm {
   position: relative;
@@ -15786,4 +15786,43 @@ footer .services {
   position: absolute;
   top: 0;
   left: 0;
+}
+.swiper {
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
+.swiper-slide {
+  /* font-size: 18px; */
+  background: var(--color-light-3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide p {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 11px;
+}
+.swiper-slide.slideService {
+  padding: 25px;
+  height: auto!important;
+}
+.swiper-pagination-service .swiper-pagination-bullet:not(:first-of-type) {
+  margin-left: 12px;
 }
