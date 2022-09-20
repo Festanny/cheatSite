@@ -1176,7 +1176,6 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
           centeredSlides: centered,
           parallax: true,
           watchSlidesVisibility: true,
-          // loop: loop,
           loopAdditionalSlides: 1,
           preloadImages: false,
           lazy: true,
@@ -1205,7 +1204,7 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
 
     // slideServicesSwiper
     var swiper = new Swiper(".swiperSliderServices", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 30,
       slidesPerGroup: 2,
       scrollbar: {
@@ -1221,12 +1220,44 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
         nextEl: ".arrow-right-hover",
         prevEl: ".arrow-left-hover",
       },
+      breakpoints: {
+        1199: { slidesPerView: 4 },
+        991: { slidesPerView: 3 },
+        767:  { slidesPerView: 2 },
+        574:  { slidesPerView: 1 },
+      },
     });
 
-    // quantity
-    document.getElementById("quantityService").addEventListener("change", function() {
-      console.log(this.value);
+    // slider Review
+    var swiper = new Swiper(".js-section-slider2", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.js-next',
+        prevEl: '.js-prev'
+      },
+      breakpoints: {
+        1199: { slidesPerView: 3 },
+        991: { slidesPerView: 2 },
+        767:  { slidesPerView: 2 },
+        574:  { slidesPerView: 1 },
+      },
     });
+
+    // quantity and coast (input)
+    $('.swiperSliderServices .swiper-wrapper .function input').on('input', function(el) {
+      var elemInput = $(el.target)[0];
+      var elemInputQuan = elemInput.value * 1.5;
+      var quan = $($(elemInput).prev()[0]).children()[0];
+      var coast = $($(elemInput).next()[0]).children()[0];
+      $(coast).html(elemInputQuan);
+      $(quan).html(elemInput.value);
+    });
+    
     
     /*--------------------------------------------------
       01. Custom easings

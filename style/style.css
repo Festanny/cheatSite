@@ -15725,6 +15725,7 @@ table.table td {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 20px;
+  padding: 0 15px;
 }
 .whyStart .whyStartBlock img {
   width: auto;
@@ -15794,7 +15795,7 @@ footer .services {
 }
 .swiper-slide {
   /* font-size: 18px; */
-  background: var(--color-light-3);
+  /* background: var(--color-light-3); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -15822,7 +15823,102 @@ footer .services {
 .swiper-slide.slideService {
   padding: 25px;
   height: auto!important;
+  background: var(--color-light-3)
 }
 .swiper-pagination-service .swiper-pagination-bullet:not(:first-of-type) {
   margin-left: 12px;
+}
+.swiper-slide label {
+  margin-bottom: 15px;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]:focus {
+  outline: none;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: -5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-webkit-slider-runnable-track {
+  width: 60%;
+  height: 9px;
+  background: #bdbdbd;
+  border-radius: 3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]:hover::-webkit-slider-runnable-track {
+  background: var(--color-purple-1);
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-ms-track {
+  width: 60%;
+  cursor: pointer;
+  height: 9px;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: -5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-ms-fill-lower {
+  background: #bdbdbd;
+  border-radius: 3rem;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]:focus::-ms-fill-lower {
+  background: var(--color-purple-1);
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-ms-fill-upper {
+  background: #bdbdbd;
+  border-radius: 3rem;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]:focus::-ms-fill-upper {
+  background: var(--color-purple-1);
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: -5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]::-moz-range-track {
+  width: 60%;
+  height: 9px;
+  background: #bdbdbd;
+  border-radius: 3rem;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.swiperSliderServices .swiper-wrapper .function input[type=range]:hover::-moz-range-track {
+  background: var(--color-purple-1);
+}
+.slideBlock {
+  cursor: pointer
+}
+.slideReview {
+  height: 100%!important;
 }

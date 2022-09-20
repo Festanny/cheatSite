@@ -374,7 +374,6 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="swiper-slide slideBlock" data-tab="2">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
@@ -385,7 +384,6 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="swiper-slide slideBlock" data-tab="3">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
@@ -396,7 +394,6 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="swiper-slide slideBlock" data-tab="4">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
@@ -407,9 +404,7 @@
                     </div>
                   </div>
                 </div>
-                
               </div>
-  
               <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
                 <div class="col-auto">
                   <button class="d-flex items-center text-24 arrow-left-hover js-prev">
@@ -430,8 +425,8 @@
                 <div class="block" data-tab="1">
                   <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
                     <div class="col-12">
-                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Вставьте ссылку</label>
-                      <input type="text" name="title" placeholder="Вставьте ссылку">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
+                      <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
                     </div>
                     <div class="col-12">
                       <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
@@ -439,23 +434,59 @@
                         <div class="swiper-wrapper">
                           <div class="swiper-slide slideService">
                             <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Просмотры</label>
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
                               <p>Увеличить количество просмотров под видео</p>
                             </div>
                             <div class="function">
                               <div class="quantity">Кол-во: <span>0</span></div>
-                              <input id="quantityService" type="range" value="25" max="100" min="0">
+                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
                               <div class="amount">Итог: ₽ <span>0</span></div>
                             </div>
                           </div>
-                          <div class="swiper-slide slideService">Slide 2</div>
-                          <div class="swiper-slide slideService">Slide 3</div>
-                          <div class="swiper-slide slideService">Slide 4</div>
-                          <div class="swiper-slide slideService">Slide 5</div>
-                          <div class="swiper-slide slideService">Slide 6</div>
-                          <div class="swiper-slide slideService">Slide 7</div>
-                          <div class="swiper-slide slideService">Slide 8</div>
-                          <div class="swiper-slide slideService">Slide 9</div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">SEO Keyword Ranking</label>
+                              <p>YouTube SEO Views for keyword ranking</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="seo">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
+                              <p>Увеличить количество лайков на видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="likes">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Подписчики</label>
+                              <p>Увеличить количество подписчиков канала</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="sub">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Зрители прямой трансляции</label>
+                              <p>Привлеките больше зрителей на прямую трансляцию</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="people">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
                         </div>
                         <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
                           <div class="col-auto">
@@ -476,9 +507,261 @@
                     </div>
                   </form>
                 </div>
-                <div class="block" data-tab="2">2</div>
-                <div class="block" data-tab="3">3</div>
-                <div class="block" data-tab="4">4</div>
+                <div class="block" data-tab="2">
+                  <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
+                      <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
+                      <div class="swiper swiperSliderServices">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                              <p>Увеличить количество просмотров под видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">SEO Keyword Ranking</label>
+                              <p>YouTube SEO Views for keyword ranking</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="seo">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
+                              <p>Увеличить количество лайков на видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="likes">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Подписчики</label>
+                              <p>Увеличить количество подписчиков канала</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="sub">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Зрители прямой трансляции</label>
+                              <p>Привлеките больше зрителей на прямую трансляцию</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="people">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-left-hover js-prev swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <div class="swiper-pagination-service"></div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-right-hover js-next swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="block" data-tab="3">
+                  <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
+                      <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
+                      <div class="swiper swiperSliderServices">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                              <p>Увеличить количество просмотров под видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">SEO Keyword Ranking</label>
+                              <p>YouTube SEO Views for keyword ranking</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="seo">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
+                              <p>Увеличить количество лайков на видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="likes">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Подписчики</label>
+                              <p>Увеличить количество подписчиков канала</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="sub">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Зрители прямой трансляции</label>
+                              <p>Привлеките больше зрителей на прямую трансляцию</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="people">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-left-hover js-prev swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <div class="swiper-pagination-service"></div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-right-hover js-next swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="block" data-tab="4">
+                  <form class="contact-form respondForm__form row y-gap-20 pt-30" action="#">
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
+                      <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
+                      <div class="swiper swiperSliderServices">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                              <p>Увеличить количество просмотров под видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">SEO Keyword Ranking</label>
+                              <p>YouTube SEO Views for keyword ranking</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="seo">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
+                              <p>Увеличить количество лайков на видео</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="likes">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Подписчики</label>
+                              <p>Увеличить количество подписчиков канала</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="sub">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slideService">
+                            <div class="info">
+                              <label class="text-16 lh-1 fw-500 text-dark-1">Зрители прямой трансляции</label>
+                              <p>Привлеките больше зрителей на прямую трансляцию</p>
+                            </div>
+                            <div class="function">
+                              <div class="quantity">Кол-во: <span>0</span></div>
+                              <input type="range" value="0" max="100" min="0" step="5" name="people">
+                              <div class="amount">Итог: ₽ <span>0</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-left-hover js-prev swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <div class="swiper-pagination-service"></div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="d-flex items-center text-24 arrow-right-hover js-next swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
+                              <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -502,8 +785,8 @@
               </div>
             </div>
   
-            <div data-anim-wrap class="js-section-slider pt-50" data-gap="30" data-pagination data-slider-cols="base-3 xl-3 lg-2 md-2 sm-1">
-              <div class="swiper-wrapper">
+            <div data-anim-wrap class="js-section-slider2 pt-50" data-gap="30" data-pagination data-slider-cols="base-3 xl-3 lg-2 md-2 sm-1">
+              <div class="swiper-wrapper slideReview">
   
                 <div class="swiper-slide">
                   <div data-anim-child="slide-left delay-1" class="testimonials -type-1">
@@ -569,10 +852,7 @@
                     </div>
                   </div>
                 </div>
-  
-  
               </div>
-  
   
               <div class="d-flex x-gap-20 items-center justify-end pt-60 lg:pt-40">
                 <div class="col-auto">
