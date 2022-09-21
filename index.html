@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
-<body class="preloader-visible" data-barba="wrapper">
+<body class="preloader-visible" data-barba="wrapper" id="start">
     <!-- preloader start -->
     <div class="preloader js-preloader">
       <div class="preloader__bg"></div>
@@ -63,10 +63,10 @@
                     </li>
   
                     <li class="menu-item-has-children">
-                      <a data-barba href="#">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <a data-barba href="/#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
                       <ul class="subnav">
                         <li class="menu__backButton js-nav-list-back">
-                          <a href="#"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
+                          <a href="/#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
                         </li>
   
                         <li><a href="event-list-1.html">YouTube</a></li>
@@ -112,9 +112,6 @@
                             <div class="icon icon-search text-dark-1"></div>
                             <input type="text" class="col-12 text-18 lh-12 text-dark-1 fw-500" placeholder="What do you want to learn?">
   
-                            <button class="d-flex items-center justify-center size-40 rounded-full bg-purple-3" data-el-toggle=".js-search-toggle">
-                              <img src="img/menus/close.svg" alt="icon">
-                            </button>
                           </div>
   
                           <div class="header-search__content mt-30">
@@ -149,9 +146,6 @@
                           <div class="row justify-between x-gap-40 pb-20">
                             <div class="col">
                               <div class="row x-gap-10 y-gap-10">
-                                <div class="col-auto">
-                                  <img src="img/menus/cart/1.png" alt="image">
-                                </div>
   
                                 <div class="col">
                                   <div class="text-dark-1 lh-15">The Ultimate Drawing Course Beginner to Advanced...</div>
@@ -163,18 +157,11 @@
                                 </div>
                               </div>
                             </div>
-  
-                            <div class="col-auto">
-                              <button><img src="img/menus/close.svg" alt="icon"></button>
-                            </div>
                           </div>
   
                           <div class="row justify-between x-gap-40 pb-20">
                             <div class="col">
                               <div class="row x-gap-10 y-gap-10">
-                                <div class="col-auto">
-                                  <img src="img/menus/cart/2.png" alt="image">
-                                </div>
   
                                 <div class="col">
                                   <div class="text-dark-1 lh-15">User Experience Design Essentials - Adobe XD UI UX...</div>
@@ -187,28 +174,10 @@
                               </div>
                             </div>
   
-                            <div class="col-auto">
-                              <button><img src="img/menus/close.svg" alt="icon"></button>
-                            </div>
                           </div>
   
                         </div>
   
-                        <div class="px-30 pt-20 pb-30 border-top-light">
-                          <div class="d-flex justify-between">
-                            <div class="text-18 lh-12 text-dark-1 fw-500">Total:</div>
-                            <div class="text-18 lh-12 text-dark-1 fw-500">$659</div>
-                          </div>
-  
-                          <div class="row x-gap-20 y-gap-10 pt-30">
-                            <div class="col-sm-6">
-                              <button class="button py-20 -dark-1 text-white -dark-button-white col-12">View Cart</button>
-                            </div>
-                            <div class="col-sm-6">
-                              <button class="button py-20 -purple-1 text-white col-12">Checkout</button>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -275,7 +244,7 @@
                       </div>
                       <div class="ml-20">
                         <div class="text-orange-1 text-16 fw-500 lh-1">17</div>
-                        <div class="mt-3">Услуг для продвижения</div>
+                        <div class="mt-3 blockInfoStart">Услуг для продвижения</div>
                       </div>
                     </div>
                   </div>
@@ -287,7 +256,7 @@
                       <i class="fa-solid fa-person text-20"></i>
                       <div class="ml-20">
                         <div class="text-dark-1 text-16 fw-500 lh-1">1000 +</div>
-                        <div class="mt-3">Довольных пользователей</div>
+                        <div class="mt-3 blockInfoStart">Довольных пользователей</div>
                       </div>
                     </div>
                   </div>
@@ -303,7 +272,7 @@
                       </div>
                       <div class="">
                         <div class="text-purple-1 text-16 fw-500 lh-1">Лучшее качество</div>
-                        <div class="mt-3">Качественное предоставление услуг</div>
+                        <div class="mt-3 blockInfoStart">Качественное предоставление услуг</div>
                       </div>
                     </div>
                   </div>
@@ -333,7 +302,7 @@
               </div>
             </div>
   
-            <div class="row y-gap-30 justify-between sm:justify-start pt-60 md:pt-50 whyStart">
+            <div class="row pt-60 md:pt-50 whyStart">
   
               <div data-anim-child="slide-up delay-1" class="whyStartBlock">
                 <div class="d-flex justify-center items-center">
@@ -362,10 +331,8 @@
   
         <section class="layout-pt-md layout-pb-md servicesBlock" id="services-main">
           <div data-anim-wrap class="container">
-  
             <div class="overflow-hidden js-section-slider" data-gap="30" data-loop data-pagination data-slider-cols="xl-6 lg-4 md-2 sm-2">
               <div class="swiper-wrapper">
-  
                 <div class="swiper-slide slideBlock" data-tab="1">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
@@ -423,16 +390,15 @@
                 </div>
               </div>
               <div class="itemTabServices">
+
                 <div class="block" data-tab="1">
                   <form class="contact-form respondForm__form row y-gap-20 pt-30" action="">
                     <div class="col-12">
                       <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
                       <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
                     </div>
-                    
                     <div class="col-12">
                       <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
-
                       <div class="sliderCustomizeService">
                         <div class="swiper-slide slideService">
                           <div class="info">
@@ -441,7 +407,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input1">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -452,7 +418,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input2">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -463,7 +429,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input3">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -474,7 +440,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input4">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -485,95 +451,97 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="watch">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input5">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
                       </div>
-                      
-                      <!-- <div class="swiper swiperSliderServices">
-                        <div class="swiper-wrapper">
-
-                          <div class="swiper-slide slideService">
-                            <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
-                              <p>Увеличить количество просмотров под видео</p>
-                            </div>
-                            <div class="function">
-                              <div class="quantity">Кол-во: <span>0</span></div>
-                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
-                              <div class="amount">Итог: ₽ <span>0</span></div>
-                            </div>
+                      <!-- <div class="navigationSlideService">
+                        <div class="prevSlickService dirSlick">
+                          <div class="d-flex items-center text-24 arrow-left-hover js-next" tabindex="0">
+                            <i class="fa-solid fa-arrow-left"></i>
                           </div>
-
-                          <div class="swiper-slide slideService">
-                            <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
-                              <p>Увеличить количество просмотров под видео</p>
-                            </div>
-                            <div class="function">
-                              <div class="quantity">Кол-во: <span>0</span></div>
-                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
-                              <div class="amount">Итог: ₽ <span>0</span></div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide slideService">
-                            <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
-                              <p>Увеличить количество просмотров под видео</p>
-                            </div>
-                            <div class="function">
-                              <div class="quantity">Кол-во: <span>0</span></div>
-                              <input type="range" value="0" max="100" min="0" step="5" name="watch">
-                              <div class="amount">Итог: ₽ <span>0</span></div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide slideService">
-                            <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
-                              <p>Увеличить количество просмотров под видео</p>
-                            </div>
-                            <div class="function">
-                              <div class="quantity">Кол-во: <span>0</span></div>
-                              <input type="range" value="0" max="100" min="0" step="5">
-                              <div class="amount">Итог: ₽ <span>0</span></div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide slideService">
-                            <div class="info">
-                              <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
-                              <p>Увеличить количество просмотров под видео</p>
-                            </div>
-                            <div class="function">
-                              <div class="quantity">Кол-во: <span>0</span></div>
-                              
-                              <div class="amount">Итог: ₽ <span>0</span></div>
-                            </div>
-                          </div>
-
                         </div>
-                        <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
-                          <div class="col-auto">
-                            <button class="d-flex items-center text-24 arrow-left-hover js-prev swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
-                              <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-                          </div>
-                          <div class="col-auto">
-                            <div class="swiper-pagination-service"></div>
-                          </div>
-                          <div class="col-auto">
-                            <button class="d-flex items-center text-24 arrow-right-hover js-next swiper-button-disabled swiper-button-lock" disabled="" tabindex="-1" aria-label="Next slide" aria-controls="swiper-wrapper-d32b91ea2d0a15c8" aria-disabled="true">
-                              <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                        <div class="dotsSlickService"></div>
+                        <div class="nextSlickService dirSlick">
+                          <div class="d-flex items-center text-24 arrow-right-hover js-next" tabindex="0">
+                            <i class="fa-solid fa-arrow-right"></i>
                           </div>
                         </div>
                       </div> -->
                     </div>
                   </form>
                 </div>
+
+                <div class="block" data-tab="2">
+                  <form class="contact-form respondForm__form row y-gap-20 pt-30" action="">
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="link">Вставьте ссылку</label>
+                      <input type="text" name="link" placeholder="Вставьте ссылку" id="link">
+                    </div>
+                    <div class="col-12">
+                      <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите услугу</label>
+                      <div class="sliderCustomizeService">
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input6">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
+                            <p>Увеличить количество лайков под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input7">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input8">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input9">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input10">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
               </div>
             </div>
           </div>
@@ -723,7 +691,7 @@
                   </div>
   
                   <div data-anim-child="slide-up delay-4" class="d-inline-block mt-30">
-                    <a href="signup.html" class="button -md -dark-1 text-white">Заказать</a>
+                    <a href="#services-main" class="button -md -dark-1 text-white">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -960,7 +928,6 @@
                   <div class="text-17 fw-500 text-white uppercase mb-25">Меню</div>
                   <div class="d-flex y-gap-10 flex-column">
                     <a href="about-1.html">Главная</a>
-                    <a href="blog-list-1.html">Каталог услуг</a>
                     <a href="instructor-become.html">Отзывы</a>
                     <a href="blog-list-1.html">FAQ</a>
                     <a href="contact-1.html">Контакты</a>
@@ -1008,14 +975,11 @@
             </div>
           </div>
         </footer>
-  
-  
+
       </div>
     </main>
   
-    <!-- JavaScript -->
-
-    
+<!-- JavaScript -->    
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
@@ -1023,5 +987,6 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/vendors.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

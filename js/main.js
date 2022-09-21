@@ -54,8 +54,15 @@
     }
 
 // href
+var fixed_offset = $('header').height();
+if (window.location.hash!='') {
+  window.hashName = window.location.hash;
+  window.location.hash = '';
+  $(document).ready(function() {
+      $('html').animate({scrollTop: $(window.hashName).offset().top - fixed_offset}, 1500);
+  });
+}
 $("body").on('click', '[href*="#"]', function (e) {
-	var fixed_offset = $('header').height();
 	$('html,body').stop().animate({
 		scrollTop: $(this.hash).offset().top - fixed_offset
 	}, 1000);
@@ -1210,7 +1217,25 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
         dots: true,
         arrows: true,
         infinite: false,
-        draggable: false
+        draggable: false,
+        // prevArrow: $('.prevSlickService'),
+        // nextArrow: $('.nextSlickService'),
+        // appendDots: '.dotsSlickService',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 574,
+            settings: {
+              slidesToShow: 1,
+              autoplaySpeed: 10000
+            }
+          }
+        ]
       });
     });
 
@@ -1335,7 +1360,7 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
     
         listItems.forEach(el => {
           const parentLink = el.querySelector('li > a');
-          parentLink.removeAttribute('href');
+          // parentLink.removeAttribute('href');
     
           parentLink.addEventListener('click', () => {
             const parent = el.parentElement;
