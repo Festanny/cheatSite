@@ -27,95 +27,90 @@
 
   <main class="main-content bg-beige-1">
 
-    <header data-anim="fade" data-add-bg="" class="header -base js-header is-in-view">
+    <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
 
-
-      <div class="header__container py-10">
+      <div class="header__container">
         <div class="row justify-between items-center">
 
           <div class="col-auto">
             <div class="header-left">
 
               <div class="header__logo ">
-                <a data-barba="" href="index.html">
+                <a data-barba href="index.html">
                   <img src="img/logo.svg" alt="logo">
                 </a>
               </div>
-
             </div>
+          </div>
+
+          <div class="header-menu js-mobile-menu-toggle ">
+            <div class="header-menu__content">
+              <div class="mobile-bg js-mobile-bg"></div>
+
+              <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+                <a href="login.html" class="text-dark-1">Вход</a>
+                <a href="signup.html" class="text-dark-1 ml-30">Регистрация</a>
+              </div>
+
+              <div class="menu js-navList">
+                <ul class="menu__nav text-white -is-active">
+                  <li>
+                    <a data-barba href="index.html">
+                      Главная
+                    </a>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a data-barba href="/#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                    <ul class="subnav">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="/#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
+                      </li>
+
+                      <li><a href="/#services-main">YouTube</a></li>
+
+                      <li><a href="/#services-main">VK</a></li>
+
+                      <li><a href="/#services-main">Twitter</a></li>
+
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a data-barba href="about.html">О нас</a>
+                  </li>
+
+                  <li>
+                    <a data-barba href="contact.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+              <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                <i class="fa-solid fa-xmark text-24"></i>
+              </div>
+            </div>
+
+            <div class="header-menu-bg"></div>
           </div>
 
 
           <div class="col-auto">
             <div class="header-right d-flex items-center">
-
-              <div class="header-menu js-mobile-menu-toggle ">
-                <div class="header-menu__content">
-                  <div class="mobile-bg js-mobile-bg"></div>
-
-                  <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
-                    <a href="login.html" class="text-dark-1">Вход</a>
-                    <a href="signup.html" class="text-dark-1 ml-30">Регистрация</a>
-                  </div>
-
-                  <div class="menu js-navList">
-                    <ul class="menu__nav text-black -is-active">
-                      <li>
-                        <a data-barba href="index.html">
-                          Главная
-                        </a>
-                      </li>
-    
-                      <li class="menu-item-has-children">
-                        <a data-barba href="#">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
-                        <ul class="subnav">
-                          <li class="menu__backButton js-nav-list-back">
-                            <a href="#"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
-                          </li>
-    
-                          <li><a href="event-list-1.html">YouTube</a></li>
-    
-                          <li><a href="event-list-2.html">VK</a></li>
-    
-                          <li><a href="event-single.html">Twitter</a></li>
-    
-                        </ul>
-                      </li>
-    
-                      <li>
-                        <a data-barba href="about.html">О нас</a>
-                      </li>
-    
-                      <li>
-                        <a data-barba href="contact.html">Контакты</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
-                  <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
-                    <i class="fa-solid fa-xmark text-24"></i>
-                  </div>
-                </div>
-
-                <div class="header-menu-bg"></div>
-              </div>
-
-
-              <div class="mr-30">
+              <div class="header-right__icons text-white d-flex items-center">
 
                 <div class="d-none xl:d-block ml-20">
-                  <button class="d-flex text-dark-1 items-center" data-el-toggle=".js-mobile-menu-toggle">
+                  <button class="d-flex text-white items-center" data-el-toggle=".js-mobile-menu-toggle">
                     <i class="fa-solid fa-bars text-20"></i>
                   </button>
                 </div>
 
               </div>
-
-              <div class="header-right__buttons md:d-none">
-                <a href="login.html" class="button -sm -rounded -dark-1 text-white">Вход</a>
+              <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
+                <a href="login.html" class="button -underline text-white">Вход</a>
+                <a href="signup.html" class="button -sm -white text-dark-1 ml-30">Регистрация</a>
               </div>
             </div>
           </div>
