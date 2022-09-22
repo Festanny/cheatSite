@@ -27,7 +27,7 @@
     <!-- preloader end -->
   
   
-    <main class="main-content  ">
+    <main class="main-content">
   
       <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
 
@@ -63,10 +63,10 @@
                     </li>
   
                     <li class="menu-item-has-children">
-                      <a data-barba href="/#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <a data-barba href="#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
                       <ul class="subnav">
                         <li class="menu__backButton js-nav-list-back">
-                          <a href="/#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
+                          <a href="#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
                         </li>
   
                         <li><a href="/#services-main">YouTube</a></li>
@@ -85,6 +85,18 @@
                     <li>
                       <a data-barba href="contact.html">Контакты</a>
                     </li>
+
+                    <li class="menu-item-has-children">
+                      <a data-barba><i class="fa-solid fa-earth-americas text-16"></i> <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <ul class="subnav">
+                        <li class="menu__backButton js-nav-list-back">
+                          <a href="#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Язык</a>
+                        </li>
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#">EN</a></li>
+                      </ul>
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -97,7 +109,6 @@
   
               <div class="header-menu-bg"></div>
             </div>
-  
   
             <div class="col-auto">
               <div class="header-right d-flex items-center">
@@ -375,19 +386,25 @@
                           </div>
                         </div>
                       </div>
-                      <!-- <div class="navigationSlideService">
-                        <div class="prevSlickService dirSlick">
-                          <div class="d-flex items-center text-24 arrow-left-hover js-next" tabindex="0">
-                            <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="paymentMain pt-30">
+                      <div class="payment">
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите способ оплаты</label>
+                          <div class="methodPayment" data-bs-toggle="modal" data-bs-target="#methodPaymentModal">
+                            <span>Credit / Debit card</span>
+                            <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
                           </div>
                         </div>
-                        <div class="dotsSlickService"></div>
-                        <div class="nextSlickService dirSlick">
-                          <div class="d-flex items-center text-24 arrow-right-hover js-next" tabindex="0">
-                            <i class="fa-solid fa-arrow-right"></i>
-                          </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Сумма заказа</label>
+                          <div class="text-18">Всего к оплате: ₽ <span class="allSumPaymentForm">0</span></div>
                         </div>
-                      </div> -->
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="emailForm">Введите свой Email</label>
+                          <input type="email" name="link" placeholder="Введите свой Email" id="emailForm">
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -972,7 +989,7 @@
                     <div class="footer-header-socials__title text-white">Подписывайтесь на нас</div>
                     <div class="footer-header-socials__list">
                       <a href="#"><i class="fa-brands fa-vk"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                   </div>
                 </div>
@@ -985,9 +1002,8 @@
                   <div class="text-17 fw-500 text-white uppercase mb-25">Меню</div>
                   <div class="d-flex y-gap-10 flex-column">
                     <a href="about-1.html">Главная</a>
-                    <a href="instructor-become.html">Отзывы</a>
-                    <a href="blog-list-1.html">FAQ</a>
-                    <a href="contact-1.html">Контакты</a>
+                    <a href="instructor-become.html">О нас</a>
+                    <a href="blog-list-1.html">Контакты</a>
                   </div>
                 </div>
   
@@ -1035,6 +1051,25 @@
 
       </div>
     </main>
+
+<!-- Модальное окно способов оплаты -->
+<div class="modal fade" id="methodPaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   
 <!-- JavaScript -->    
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

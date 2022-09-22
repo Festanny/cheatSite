@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style/main.css">
     <script src="https://kit.fontawesome.com/0396950dcd.js" crossorigin="anonymous"></script>
 </head>
-<body class="preloader-visible" data-barba="wrapper">
+<body class="preloader-visible" data-barba="wrapper" id="start">
     <!-- preloader start -->
     <div class="preloader js-preloader">
       <div class="preloader__bg"></div>
@@ -61,10 +61,10 @@
                     </li>
   
                     <li class="menu-item-has-children">
-                      <a data-barba href="/#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <a data-barba href="#services-main">Каталог услуг <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
                       <ul class="subnav">
                         <li class="menu__backButton js-nav-list-back">
-                          <a href="/#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
+                          <a href="#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Каталог услуг</a>
                         </li>
   
                         <li><a href="/#services-main">YouTube</a></li>
@@ -83,6 +83,18 @@
                     <li>
                       <a data-barba href="contact.html">Контакты</a>
                     </li>
+  
+                    <li class="menu-item-has-children">
+                      <a data-barba><i class="fa-solid fa-earth-americas text-16"></i> <i class="fa-solid fa-chevron-right text-13 ml-10"></i></a>
+                      <ul class="subnav">
+                        <li class="menu__backButton js-nav-list-back">
+                          <a href="#start"><i class="fa-solid fa-chevron-left text-13 mr-10"></i> Язык</a>
+                        </li>
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#">EN</a></li>
+                      </ul>
+                    </li>
+  
                   </ul>
                 </div>
               </div>
@@ -95,7 +107,6 @@
   
               <div class="header-menu-bg"></div>
             </div>
-  
   
             <div class="col-auto">
               <div class="header-right d-flex items-center">
@@ -176,7 +187,7 @@
                     <div class="footer-header-socials__title text-white">Подписывайтесь на нас</div>
                     <div class="footer-header-socials__list">
                       <a href="#"><i class="fa-brands fa-vk"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                   </div>
                 </div>
@@ -189,9 +200,8 @@
                   <div class="text-17 fw-500 text-white uppercase mb-25">Меню</div>
                   <div class="d-flex y-gap-10 flex-column">
                     <a href="about-1.html">Главная</a>
-                    <a href="instructor-become.html">Отзывы</a>
-                    <a href="blog-list-1.html">FAQ</a>
-                    <a href="contact-1.html">Контакты</a>
+                    <a href="instructor-become.html">О нас</a>
+                    <a href="blog-list-1.html">Контакты</a>
                   </div>
                 </div>
   

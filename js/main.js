@@ -1268,6 +1268,16 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
       $(coast).html(elemInputQuan);
       $(quan).html(elemInput.value);
     });
+
+    // allSum
+    // $('.sliderCustomizeService .swiper-slide .function input').on('input', function(el) {
+    //   var elemInput = $(el.target)[0];
+    //   var elemInputQuan = elemInput.value * 1.5;
+    //   var quan = $($(elemInput).prev()[0]).children()[0];
+    //   var coast = $($(elemInput).next()[0]).children()[0];
+    //   $(coast).html(elemInputQuan);
+    //   $(quan).html(elemInput.value);
+    // });
     
     
     /*--------------------------------------------------

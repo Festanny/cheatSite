@@ -3990,15 +3990,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 20px;
 }
 
-.footer.-type-1 .footer-header .footer-header-socials__list {
+.footer.-type-1 .footer-header .footer-header-socials__list,
+.contacts-socials__list {
   display: flex;
 }
 
-.footer.-type-1 .footer-header .footer-header-socials__list > * + * {
+.footer.-type-1 .footer-header .footer-header-socials__list > * + *,
+.contacts-socials__list > * + * {
   margin-left: 4px;
 }
 
-.footer.-type-1 .footer-header .footer-header-socials__list a {
+.footer.-type-1 .footer-header .footer-header-socials__list a,
+.contacts-socials__list a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4009,7 +4012,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-.footer.-type-1 .footer-header .footer-header-socials__list a:hover {
+.footer.-type-1 .footer-header .footer-header-socials__list a:hover,
+.contacts-socials__list a:hover {
   color: white !important;
   background-color: #2B1C55 !important;
 }
@@ -4306,6 +4310,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header .header-menu .menu__nav {
     display: flex;
+    align-items: center
   }
   .header .header-menu .menu__nav a {
     display: flex;
@@ -15953,4 +15958,24 @@ footer .services {
 }
 .header.-base {
   background-color: var(--color-dark-1);
+}
+form .payment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  gap: 20px;
+}
+form .payment .col-6 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.paymentMain .methodPayment {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-light-3);
+  padding: 25px;
+  border-radius: 8px
+}
+.paymentMain .methodPayment i {
+  transform: rotate(90deg);
 }
