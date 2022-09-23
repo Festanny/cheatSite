@@ -15994,3 +15994,8 @@ form .payment .col-6 {
   background-color: var(--color-dark-1);
   color: var(--color-light-3);
 }
+.allSumPaymentForm,
+.allСommissionPaymentForm {
+  font-size: 22px;
+  font-weight: bold;
+}
