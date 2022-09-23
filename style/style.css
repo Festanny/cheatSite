@@ -15999,6 +15999,61 @@ form .payment .col-6 {
   font-size: 22px;
   font-weight: bold;
 }
+#upbutton {
+  display: none;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  background: var(--color-dark-1);
+  border-radius: 50%;
+  color: #fff;
+  overflow: hidden;
+  z-index: 100;
+}
+#upbutton i {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  margin: 0;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slider .btnOrderLeftRight {
+  position: absolute;
+  bottom: 0;
+  margin-top: 60px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.slick-slider .btnOrderLeftRight i {
+  color: #bfbfbf;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.slick-slider .btnOrderLeftRight.slick-disabled {
+  cursor: default;
+}
+.slick-slider .btnOrderLeftRight:hover i {
+  color: var(--color-purple-1);
+}
+.slick-slider .prevBtnOrder {
+  left: calc(50% - 30px);
+  transform: translateX(-50%);
+}
+.slick-slider .nextBtnOrder {
+  right: calc(50% - 30px);
+  transform: translateX(50%);
+}
+.slick-slider .prevBtnOrder:hover i {
+  transform: translateX(-5px) scale(1.25);
+}
+.slick-slider .nextBtnOrder:hover i {
+  transform: translateX(5px) scale(1.25);
+}
 
 @media screen and (max-width: 767px) {
   form .payment {
