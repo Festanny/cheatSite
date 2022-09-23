@@ -69,7 +69,24 @@ $("body").on('click', '[href*="#"]', function (e) {
 	e.preventDefault();
 });
 
-// Tab-main
+// quantity and coast (input)
+$('.sliderCustomizeService .swiper-slide .function input').on('input', function(el) {
+  var elemInput = $(el.target)[0],
+      coefficient = $(el.target).attr('data-coefficient'),
+      elemInputCoast = elemInput.value * coefficient,
+      quan = $($(elemInput).prev()[0]).children()[0],
+      coast = $($(elemInput).next()[0]).children()[0];
+  $(coast).html(elemInputCoast);
+  $(quan).html(elemInput.value);
+});
+
+// allSumOrder
+$('.servicesBlock .block').on('click', function () {
+  var id = $(this).attr('data-tab')
+  tabEdit(id)
+});
+
+// TabOrder
 $('.servicesBlock .swiper-slide.slideBlock').click(function () {
 	var id = $(this).attr('data-tab'),
   content = $('.servicesBlock .block[data-tab="' + id + '"]');
@@ -79,7 +96,22 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
 
 	$('.servicesBlock .block.active').removeClass('active');
 	content.addClass('active');
+  tabEdit(id);
 });
+
+// tabEdit
+function tabEdit(id) {
+  var contentCount = $('.servicesBlock .block[data-tab="' + id + '"] input[type="range"]').length,
+      sumComm = 0,
+      sumAllOrder = 0,
+      commission = 0.03
+  for (var i=0; i<contentCount; i++) {
+    sumComm = sumComm + Number($('.servicesBlock .block[data-tab="' + id + '"] input[type="range"]').eq(i).next().children().text()) * commission;
+    sumAllOrder = sumAllOrder + Number($('.servicesBlock .block[data-tab="' + id + '"] input[type="range"]').eq(i).next().children().text());
+    $('form .payment .col-6 div .allСommissionPaymentForm').text(sumComm.toFixed(2))
+    $('form .payment .col-6 div .allSumPaymentForm').text(Number(sumAllOrder.toFixed(2)) + Number(sumComm.toFixed(2)))
+  }
+}
     
     // Reloads all scripts when navigating through pages
     function initComponents() {
@@ -1258,27 +1290,6 @@ $('.servicesBlock .swiper-slide.slideBlock').click(function () {
         574:  { slidesPerView: 1 },
       },
     });
-
-    // quantity and coast (input)
-    $('.sliderCustomizeService .swiper-slide .function input').on('input', function(el) {
-      var elemInput = $(el.target)[0];
-      var elemInputQuan = elemInput.value * 1.5;
-      var quan = $($(elemInput).prev()[0]).children()[0];
-      var coast = $($(elemInput).next()[0]).children()[0];
-      $(coast).html(elemInputQuan);
-      $(quan).html(elemInput.value);
-    });
-
-    // allSum
-    // $('.sliderCustomizeService .swiper-slide .function input').on('input', function(el) {
-    //   var elemInput = $(el.target)[0];
-    //   var elemInputQuan = elemInput.value * 1.5;
-    //   var quan = $($(elemInput).prev()[0]).children()[0];
-    //   var coast = $($(elemInput).next()[0]).children()[0];
-    //   $(coast).html(elemInputQuan);
-    //   $(quan).html(elemInput.value);
-    // });
-    
     
     /*--------------------------------------------------
       01. Custom easings

@@ -15962,7 +15962,7 @@ footer .services {
 form .payment {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
-  gap: 20px;
+  gap: 30px;
 }
 form .payment .col-6 {
   display: flex;
@@ -15978,4 +15978,19 @@ form .payment .col-6 {
 }
 .paymentMain .methodPayment i {
   transform: rotate(90deg);
+}
+.paymentMain {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.paymentMain .buttonNewOrder {
+  padding: 15px 22px;
+  background-color: var(--color-light-3);
+  border-radius: 8px;
+  transition: all .2s;
+}
+.paymentMain .buttonNewOrder:hover {
+  background-color: var(--color-dark-1);
+  color: var(--color-light-3);
 }

@@ -263,7 +263,7 @@
           <div data-anim-wrap class="container">
             <div class="overflow-hidden js-section-slider" data-gap="30" data-loop data-pagination data-slider-cols="xl-6 lg-4 md-2 sm-2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide slideBlock" data-tab="1">
+                <label class="swiper-slide slideBlock" data-tab="1" for="socOrder1">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -272,8 +272,9 @@
                       <div class="featureCard__title">YouTube</div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide slideBlock" data-tab="2">
+                  <input type="radio" name="order" id="socOrder1" value="YouTube" style="display: none;">
+                </label>
+                <label class="swiper-slide slideBlock" data-tab="2" for="socOrder2">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -282,8 +283,9 @@
                       <div class="featureCard__title">TikTok</div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide slideBlock" data-tab="3">
+                  <input type="radio" name="order" id="socOrder2" value="TikTok" style="display: none;">
+                </label>
+                <label class="swiper-slide slideBlock" data-tab="3" for="socOrder3">
                   <div data-anim-child="slide-left delay-2" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -292,8 +294,9 @@
                       <div class="featureCard__title">YouTube</div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide slideBlock" data-tab="4">
+                  <input type="radio" name="order" id="socOrder3" value="YouTube" style="display: none;">
+                </label>
+                <label class="swiper-slide slideBlock" data-tab="4" for="socOrder4">
                   <div data-anim-child="slide-left delay-3" class="featureCard -type-1 -featureCard-hover">
                     <div class="featureCard__content">
                       <div class="featureCard__icon">
@@ -302,7 +305,8 @@
                       <div class="featureCard__title">TikTok</div>
                     </div>
                   </div>
-                </div>
+                  <input type="radio" name="order" id="socOrder4" value="TikTok" style="display: none;">
+                </label>
               </div>
               <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
                 <div class="col-auto">
@@ -337,7 +341,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input1">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input1" data-coefficient="3">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -348,7 +352,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input2">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input2" data-coefficient="10">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -359,7 +363,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input3">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input3" data-coefficient="1">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -370,7 +374,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input4">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input4" data-coefficient="0.5">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -381,7 +385,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input5">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input5" data-coefficient="20">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -391,20 +395,23 @@
                       <div class="payment">
                         <div class="col-6">
                           <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите способ оплаты</label>
-                          <div class="methodPayment" data-bs-toggle="modal" data-bs-target="#methodPaymentModal">
-                            <span>Credit / Debit card</span>
-                            <i class="fa-solid fa-chevron-right text-13 ml-10"></i>
-                          </div>
+                          <select name="method" required>
+                            <option value="Карта">Credit / debit card</option>
+                            <option value="Qiwi">Qiwi</option>
+                            <option value="Яндекс.Деньги">Яндекс.Деньги</option>
+                          </select>
                         </div>
                         <div class="col-6">
                           <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Сумма заказа</label>
                           <div class="text-18">Всего к оплате: ₽ <span class="allSumPaymentForm">0</span></div>
+                          <div class="text-18">Комиссия выбранной платежной системы: ₽ <span class="allСommissionPaymentForm">0</span> (3%)</div>
                         </div>
                         <div class="col-6">
                           <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="emailForm">Введите свой Email</label>
                           <input type="email" name="link" placeholder="Введите свой Email" id="emailForm">
                         </div>
                       </div>
+                      <button type="button" class="buttonNewOrder">Создать заказ</button>
                     </div>
                   </form>
                 </div>
@@ -425,18 +432,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input6">
-                            <div class="amount">Итог: ₽ <span>0</span></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slideService">
-                          <div class="info">
-                            <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
-                            <p>Увеличить количество лайков под видео</p>
-                          </div>
-                          <div class="function">
-                            <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input7">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input1" data-coefficient="3">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -447,7 +443,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input8">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input2" data-coefficient="10">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -458,7 +454,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input9">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input3" data-coefficient="1">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -469,11 +465,44 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input10">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input4" data-coefficient="0.5">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input5" data-coefficient="20">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="paymentMain pt-30">
+                      <div class="payment">
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите способ оплаты</label>
+                          <select name="method" required>
+                            <option value="Карта">Credit / debit card</option>
+                            <option value="Qiwi">Qiwi</option>
+                            <option value="Яндекс.Деньги">Яндекс.Деньги</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Сумма заказа</label>
+                          <div class="text-18">Всего к оплате: ₽ <span class="allSumPaymentForm">0</span></div>
+                          <div class="text-18">Комиссия выбранной платежной системы: ₽ <span class="allСommissionPaymentForm">0</span> (3%)</div>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="emailForm">Введите свой Email</label>
+                          <input type="email" name="link" placeholder="Введите свой Email" id="emailForm">
+                        </div>
+                      </div>
+                      <button type="button" class="buttonNewOrder">Создать заказ</button>
                     </div>
                   </form>
                 </div>
@@ -494,18 +523,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input6">
-                            <div class="amount">Итог: ₽ <span>0</span></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slideService">
-                          <div class="info">
-                            <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
-                            <p>Увеличить количество лайков под видео</p>
-                          </div>
-                          <div class="function">
-                            <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input7">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input1" data-coefficient="3">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -516,7 +534,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input8">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input2" data-coefficient="10">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -527,7 +545,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input9">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input3" data-coefficient="1">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -538,11 +556,44 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input10">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input4" data-coefficient="0.5">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input5" data-coefficient="20">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="paymentMain pt-30">
+                      <div class="payment">
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите способ оплаты</label>
+                          <select name="method" required>
+                            <option value="Карта">Credit / debit card</option>
+                            <option value="Qiwi">Qiwi</option>
+                            <option value="Яндекс.Деньги">Яндекс.Деньги</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Сумма заказа</label>
+                          <div class="text-18">Всего к оплате: ₽ <span class="allSumPaymentForm">0</span></div>
+                          <div class="text-18">Комиссия выбранной платежной системы: ₽ <span class="allСommissionPaymentForm">0</span> (3%)</div>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="emailForm">Введите свой Email</label>
+                          <input type="email" name="link" placeholder="Введите свой Email" id="emailForm">
+                        </div>
+                      </div>
+                      <button type="button" class="buttonNewOrder">Создать заказ</button>
                     </div>
                   </form>
                 </div>
@@ -563,18 +614,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input6">
-                            <div class="amount">Итог: ₽ <span>0</span></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slideService">
-                          <div class="info">
-                            <label class="text-16 lh-1 fw-500 text-dark-1">Лайки</label>
-                            <p>Увеличить количество лайков под видео</p>
-                          </div>
-                          <div class="function">
-                            <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input7">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input1" data-coefficient="3">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -585,7 +625,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input8">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input2" data-coefficient="10">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -596,7 +636,7 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input9">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input3" data-coefficient="1">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
@@ -607,14 +647,48 @@
                           </div>
                           <div class="function">
                             <div class="quantity">Кол-во: <span>0</span></div>
-                            <input type="range" value="0" max="100" min="0" step="5" name="input10">
+                            <input type="range" value="0" max="100" min="0" step="5" name="input4" data-coefficient="0.5">
+                            <div class="amount">Итог: ₽ <span>0</span></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slideService">
+                          <div class="info">
+                            <label class="text-16 lh-1 fw-500 text-dark-1">Просмотры</label>
+                            <p>Увеличить количество просмотров под видео</p>
+                          </div>
+                          <div class="function">
+                            <div class="quantity">Кол-во: <span>0</span></div>
+                            <input type="range" value="0" max="100" min="0" step="5" name="input5" data-coefficient="20">
                             <div class="amount">Итог: ₽ <span>0</span></div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="paymentMain pt-30">
+                      <div class="payment">
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Выберите способ оплаты</label>
+                          <select name="method" required>
+                            <option value="Карта">Credit / debit card</option>
+                            <option value="Qiwi">Qiwi</option>
+                            <option value="Яндекс.Деньги">Яндекс.Деньги</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Сумма заказа</label>
+                          <div class="text-18">Всего к оплате: ₽ <span class="allSumPaymentForm">0</span></div>
+                          <div class="text-18">Комиссия выбранной платежной системы: ₽ <span class="allСommissionPaymentForm">0</span> (3%)</div>
+                        </div>
+                        <div class="col-6">
+                          <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="emailForm">Введите свой Email</label>
+                          <input type="email" name="link" placeholder="Введите свой Email" id="emailForm">
+                        </div>
+                      </div>
+                      <button type="button" class="buttonNewOrder">Создать заказ</button>
+                    </div>
                   </form>
                 </div>
+
 
               </div>
             </div>
@@ -1051,25 +1125,6 @@
 
       </div>
     </main>
-
-<!-- Модальное окно способов оплаты -->
-<div class="modal fade" id="methodPaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
   
 <!-- JavaScript -->    
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
