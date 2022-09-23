@@ -106,11 +106,13 @@ $('.servicesBlock .block').on('click change', function () {
 });
 
 // TabOrder
-$('.servicesBlock .swiper-slide.slideBlock').click(function () {
+$('.servicesBlock .swiper-slide.slideBlock').on('click',function () {
 	var id = $(this).attr('data-tab'),
       content = $('.servicesBlock .block[data-tab="' + id + '"]'),
-      commission = Number($('.itemTabServices .block[data-tab="' + id + '"] .paymentMain select option:selected').attr('data-com-sys')) / 100;
+      commission = Number($('.itemTabServices .block[data-tab="' + id + '"] .paymentMain select option:selected').attr('data-com-sys')) / 100,
+      socName = $('.servicesBlock .swiper-slide.slideBlock[data-tab="' + id + '"] .featureCard__content .featureCard__title').text();
 
+  $('.servicesBlock .block[data-tab="' + id + '"] .socNameFormOrder').val(socName);
 	$('.servicesBlock .swiper-slide.slideBlock.active').removeClass('active');
 	$(this).addClass('active');
 
@@ -1269,7 +1271,7 @@ function tabEdit(id, commission) {
       dots: false,
       arrows: true,
       infinite: false,
-      // draggable: false,
+      draggable: false,
       prevArrow: '<div class="prevBtnOrder btnOrderLeftRight"><i class="fa-solid fa-arrow-left text-24"></i></div>',
       nextArrow: '<div class="nextBtnOrder btnOrderLeftRight"><i class="fa-solid fa-arrow-right text-24"></i></div>',
       responsive: [
